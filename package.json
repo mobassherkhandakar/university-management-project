@@ -14,7 +14,7 @@
   "author": "Mobassher Khandakar",
   "license": "ISC",
   "lint-staged": {
-    "src/**/*.ts": "npm lint-pettier "
+    "src/**/*.ts": "npm run lint-pettier "
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
