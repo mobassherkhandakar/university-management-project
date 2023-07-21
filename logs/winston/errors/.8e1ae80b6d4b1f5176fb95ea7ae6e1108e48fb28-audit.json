@@ -59,6 +59,11 @@
             "date": 1689963668143,
             "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-22-07-00error.log",
             "hash": "5149347f26893c0d81d7ce6f1cd589bd4f3ed83cab6bc8154e6fd04f3dc8a5b3"
+        },
+        {
+            "date": 1689966289338,
+            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-22-07-01error.log",
+            "hash": "12e6b83c0ef8ca93cf965bb27df58733e91b550a8c1dda9b4ca8ec53c1af79e4"
         }
     ],
     "hashType": "sha256"
