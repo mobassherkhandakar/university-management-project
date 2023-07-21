@@ -1,40 +1,40 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\.d8fd208f790be19007112e938face1bf6b5d30bf-audit.json",
+  "files": [
+    {
+      "date": 1689914010851,
+      "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-10success.log",
+      "hash": "70a5badce12b2932d85c7c3ad7d98adaf3d27d7c2715a3e42a31b0fd0d55f86f"
     },
-    "auditLog": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\.d8fd208f790be19007112e938face1bf6b5d30bf-audit.json",
-    "files": [
-        {
-            "date": 1689914010851,
-            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-10success.log",
-            "hash": "70a5badce12b2932d85c7c3ad7d98adaf3d27d7c2715a3e42a31b0fd0d55f86f"
-        },
-        {
-            "date": 1689915605442,
-            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-11success.log",
-            "hash": "6a9a02b255fa4ec69570700820bde2e6a1e847058ccf6d9da215f6affb036f43"
-        },
-        {
-            "date": 1689921110886,
-            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-12success.log",
-            "hash": "07881ba121b030c62a62d90ef0e4db12b812a2e13c150dc3c56e04b8f82a0d71"
-        },
-        {
-            "date": 1689923434582,
-            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-13success.log",
-            "hash": "0dd93176c8bf4325807ff9c70ce884395f780680b34f7d59bae24139fe23e812"
-        },
-        {
-            "date": 1689930137710,
-            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-15success.log",
-            "hash": "cf6d990ca220fadbb2fd00e50e7eb50a8e1fbdcb999ad58f0121c819dd89060d"
-        },
-        {
-            "date": 1689933600851,
-            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-16success.log",
-            "hash": "190f553276afc0ced560446ca739f37a09347e40bac9e0ebb3fae61f1368520d"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1689915605442,
+      "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-11success.log",
+      "hash": "6a9a02b255fa4ec69570700820bde2e6a1e847058ccf6d9da215f6affb036f43"
+    },
+    {
+      "date": 1689921110886,
+      "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-12success.log",
+      "hash": "07881ba121b030c62a62d90ef0e4db12b812a2e13c150dc3c56e04b8f82a0d71"
+    },
+    {
+      "date": 1689923434582,
+      "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-13success.log",
+      "hash": "0dd93176c8bf4325807ff9c70ce884395f780680b34f7d59bae24139fe23e812"
+    },
+    {
+      "date": 1689930137710,
+      "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-15success.log",
+      "hash": "cf6d990ca220fadbb2fd00e50e7eb50a8e1fbdcb999ad58f0121c819dd89060d"
+    },
+    {
+      "date": 1689933600851,
+      "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-16success.log",
+      "hash": "190f553276afc0ced560446ca739f37a09347e40bac9e0ebb3fae61f1368520d"
+    }
+  ],
+  "hashType": "sha256"
 }

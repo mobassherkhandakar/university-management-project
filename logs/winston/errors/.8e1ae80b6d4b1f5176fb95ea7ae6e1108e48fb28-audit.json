@@ -1,40 +1,40 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\.8e1ae80b6d4b1f5176fb95ea7ae6e1108e48fb28-audit.json",
+  "files": [
+    {
+      "date": 1689914010859,
+      "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-21-07-10error.log",
+      "hash": "126fad70c6f3a07571d3060910ef43f49094aaca8542741edae970abcb1920e0"
     },
-    "auditLog": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\.8e1ae80b6d4b1f5176fb95ea7ae6e1108e48fb28-audit.json",
-    "files": [
-        {
-            "date": 1689914010859,
-            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-21-07-10error.log",
-            "hash": "126fad70c6f3a07571d3060910ef43f49094aaca8542741edae970abcb1920e0"
-        },
-        {
-            "date": 1689915605449,
-            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-21-07-11error.log",
-            "hash": "93667636814b5cd514db67cc75d179d66ef120ea783016d8a45d0301c47157eb"
-        },
-        {
-            "date": 1689921110912,
-            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-21-07-12error.log",
-            "hash": "ae1aeaac2887eb795ff8c90472cb768d5517a6735e25177be973fa90ce967f33"
-        },
-        {
-            "date": 1689923434602,
-            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-21-07-13error.log",
-            "hash": "05dd70f825862480577d53c12d04d322f1bc3e32a15ca4b68264c6d98132fc26"
-        },
-        {
-            "date": 1689930137726,
-            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-21-07-15error.log",
-            "hash": "38c0473e93ebb101af10dbdd3be6bfd674d3458f439cf8f61d1162c48917f9ea"
-        },
-        {
-            "date": 1689933622308,
-            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-21-07-16error.log",
-            "hash": "8cd40b93770461c7d00624bbed1b9be8462be7cdcdd4ce5c6d48e86aa390670c"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1689915605449,
+      "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-21-07-11error.log",
+      "hash": "93667636814b5cd514db67cc75d179d66ef120ea783016d8a45d0301c47157eb"
+    },
+    {
+      "date": 1689921110912,
+      "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-21-07-12error.log",
+      "hash": "ae1aeaac2887eb795ff8c90472cb768d5517a6735e25177be973fa90ce967f33"
+    },
+    {
+      "date": 1689923434602,
+      "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-21-07-13error.log",
+      "hash": "05dd70f825862480577d53c12d04d322f1bc3e32a15ca4b68264c6d98132fc26"
+    },
+    {
+      "date": 1689930137726,
+      "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-21-07-15error.log",
+      "hash": "38c0473e93ebb101af10dbdd3be6bfd674d3458f439cf8f61d1162c48917f9ea"
+    },
+    {
+      "date": 1689933622308,
+      "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-21-07-16error.log",
+      "hash": "8cd40b93770461c7d00624bbed1b9be8462be7cdcdd4ce5c6d48e86aa390670c"
+    }
+  ],
+  "hashType": "sha256"
 }

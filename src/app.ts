@@ -12,8 +12,6 @@ app.use(express.urlencoded({ extended: true }))
 //user Router
 app.use('/api/vi/user', usersRouter)
 
-
-
 app.get('/', (req: Request, res: Response) => {
   // throw new ApiError(400,'ore baba error')
   // next('ore baba error ami nai')
