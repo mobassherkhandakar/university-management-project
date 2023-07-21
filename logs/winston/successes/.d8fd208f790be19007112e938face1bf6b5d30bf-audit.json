@@ -6,9 +6,19 @@
     "auditLog": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\.d8fd208f790be19007112e938face1bf6b5d30bf-audit.json",
     "files": [
         {
-            "date": 1689843179868,
-            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-20-07-14success.log",
-            "hash": "c4e5552fab4150873d5eb4ed6709e3454377a34c1e1b65b6ef4c2f9477d02481"
+            "date": 1689914010851,
+            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-10success.log",
+            "hash": "70a5badce12b2932d85c7c3ad7d98adaf3d27d7c2715a3e42a31b0fd0d55f86f"
+        },
+        {
+            "date": 1689915605442,
+            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-11success.log",
+            "hash": "6a9a02b255fa4ec69570700820bde2e6a1e847058ccf6d9da215f6affb036f43"
+        },
+        {
+            "date": 1689921110886,
+            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-21-07-12success.log",
+            "hash": "07881ba121b030c62a62d90ef0e4db12b812a2e13c150dc3c56e04b8f82a0d71"
         }
     ],
     "hashType": "sha256"
