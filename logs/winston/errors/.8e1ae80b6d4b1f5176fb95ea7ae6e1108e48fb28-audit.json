@@ -64,6 +64,16 @@
             "date": 1689966289338,
             "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-22-07-01error.log",
             "hash": "12e6b83c0ef8ca93cf965bb27df58733e91b550a8c1dda9b4ca8ec53c1af79e4"
+        },
+        {
+            "date": 1689970624807,
+            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-22-07-02error.log",
+            "hash": "6cf504403ca5e46d986c8e0c3fa67215827b3782aa7905231729e1cff3542216"
+        },
+        {
+            "date": 1689994915299,
+            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\errors\\phu-2023-22-07-09error.log",
+            "hash": "fd8a3be7233c7e6d287b25b8d0ef2897612f647d171555d6261dffb1526438b9"
         }
     ],
     "hashType": "sha256"
