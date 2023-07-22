@@ -1,8 +1,8 @@
-import express, { Application } from 'express';
-const app: Application = express();
 import cors from 'cors';
-import globalErrorHandler from './middlewares/globalErrorHandlar';
+import express, { Application } from 'express';
+import globalErrorHandler from './app/middlewares/globalErrorHandlar';
 import { UserRoute } from './app/modules/users/users.route';
+const app: Application = express();
 // import ApiError from './errors/ApiError'
 
 //*middleware
