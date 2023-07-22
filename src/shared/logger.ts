@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
-import winston from 'winston'
-import path from 'path'
-import DailyRotateFile from 'winston-daily-rotate-file'
+import winston from 'winston';
+import path from 'path';
+import DailyRotateFile from 'winston-daily-rotate-file';
 
 const logger = winston.createLogger({
   level: 'info',
@@ -22,7 +22,7 @@ const logger = winston.createLogger({
       maxFiles: '14d',
     }),
   ],
-})
+});
 const errorLogger = winston.createLogger({
   level: 'error',
   format: winston.format.json(),
@@ -42,6 +42,6 @@ const errorLogger = winston.createLogger({
       maxFiles: '14d',
     }),
   ],
-})
+});
 
-export { logger, errorLogger }
+export { logger, errorLogger };
