@@ -74,6 +74,16 @@
             "date": 1689994915287,
             "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-22-07-09success.log",
             "hash": "786b9729d0a03bd789e91a984c0a106c1f434f2217ab5f5c054c2840d0dc5d18"
+        },
+        {
+            "date": 1689998503199,
+            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-22-07-10success.log",
+            "hash": "5d242cbf05ec8220e4e638796d2828c5054bacf45bced4b63a9b7e85e694a137"
+        },
+        {
+            "date": 1690002822859,
+            "name": "C:\\Projects\\school-menagement-project\\server\\logs\\winston\\successes\\phu-2023-22-07-11success.log",
+            "hash": "d2ba0e99e1f0ea1a9ff4e6ecbae9bc54fd6fc96456f0f74db14e210555866a23"
         }
     ],
     "hashType": "sha256"
