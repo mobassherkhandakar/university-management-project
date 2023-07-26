@@ -21,7 +21,6 @@ async function main() {
     errorLogger.error('Failed to connect mongoose', error);
   }
   process.on('unhandledRejection', error => {
-    console.log('unhandle Rejection hogaya');
     if (server) {
       server.close(() => {
         errorLogger.error(error);
@@ -34,7 +33,6 @@ async function main() {
 }
 main();
 process.on('SIGTERM', () => {
-  console.log('object');
   logger.info('SIGTERM is received');
   if (server) {
     server.close();
