@@ -5,7 +5,8 @@ import {
   academicSemesterTitles,
 } from './academicSemester.constens';
 import { Schema, model } from 'mongoose';
-
+import status from 'http-status';
+import ApiError from '../../../errors/ApiError';
 const academicSemesterSchema = new Schema<IAcademicSemester>({
   title: {
     type: String,
@@ -31,6 +32,17 @@ const academicSemesterSchema = new Schema<IAcademicSemester>({
     required: true,
     enum: academicSemesterMonths,
   },
+});
+
+academicSemesterSchema.pre('save', async function (next) {
+  const isExist = await AcademicSemester.findOne({
+    title: this.title,
+    year: this.year,
+  });
+  if (isExist) {
+    throw new ApiError(status.CONFLICT, 'This Semester Title is Already Exist');
+  }
+  next();
 });
 
 export const AcademicSemester = model<IAcademicSemester>(
