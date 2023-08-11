@@ -26,6 +26,7 @@ const getAllSemesters = catchAsync(
     const result = await AcademicSemesterService.getAllSemesters(
       paginationOption,
     );
+
     sendResponse<IAcademicSemester[]>(res, {
       statusCode: httpStatus.OK,
       success: true,

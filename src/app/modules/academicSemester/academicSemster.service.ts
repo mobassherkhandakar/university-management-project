@@ -6,6 +6,7 @@ import { AcademicSemester } from './academicSemester.modal';
 import { IPaginationOption } from '../../../interfaces/pagination';
 import { IGenericResponse } from '../../../interfaces/common';
 import { paginationHelpers } from '../../../helpers/paginationHelpers';
+import { SortOrder } from 'mongoose';
 
 const createSemester = async (
   payload: IAcademicSemester,
@@ -20,11 +21,15 @@ const createSemester = async (
 const getAllSemesters = async (
   paginationOption: IPaginationOption,
 ): Promise<IGenericResponse<IAcademicSemester[]>> => {
-  const { page, limit, skip } =
+  const { page, limit, skip, sortBy, sortOrder } =
     paginationHelpers.calculatePagination(paginationOption);
+  const sortCondition: { [key: string]: SortOrder } = {};
+  if (sortBy && sortOrder) {
+    sortCondition[sortBy] = sortOrder;
+  }
 
   const result = await AcademicSemester.find()
-    .sort({ year: 'desc' })
+    .sort(sortCondition)
     .skip(skip)
     .limit(limit);
 
