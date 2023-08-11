@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-unused-expressions */
 /* eslint-disable prefer-const */
 import { ErrorRequestHandler } from 'express';
