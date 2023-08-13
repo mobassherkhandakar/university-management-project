@@ -33,7 +33,7 @@ const getAllSemesters = catchAsync(
     sendResponse<IAcademicSemester[]>(res, {
       statusCode: httpStatus.OK,
       success: true,
-      message: 'Pagination create done',
+      message: 'Pagination implements done',
       meta: result.meta,
       data: result.data,
     });
