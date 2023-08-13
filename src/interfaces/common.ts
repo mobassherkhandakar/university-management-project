@@ -14,3 +14,7 @@ export type IGenericErrorResponse = {
   message: string;
   errorMessage: IGenericErrorMessage[];
 };
+
+export type IAcademicSemesterFilter = {
+  searchTram: string;
+};

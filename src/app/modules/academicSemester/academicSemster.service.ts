@@ -4,7 +4,10 @@ import { academicSemesterTitleCodeMapper } from './academicSemester.constens';
 import { IAcademicSemester } from './academicSemester.interface';
 import { AcademicSemester } from './academicSemester.modal';
 import { IPaginationOption } from '../../../interfaces/pagination';
-import { IGenericResponse } from '../../../interfaces/common';
+import {
+  IAcademicSemesterFilter,
+  IGenericResponse,
+} from '../../../interfaces/common';
 import { paginationHelpers } from '../../../helpers/paginationHelpers';
 import { SortOrder } from 'mongoose';
 
@@ -19,8 +22,50 @@ const createSemester = async (
 };
 
 const getAllSemesters = async (
+  filters: IAcademicSemesterFilter,
   paginationOption: IPaginationOption,
 ): Promise<IGenericResponse<IAcademicSemester[]>> => {
+  const { searchTram } = filters;
+
+  const searchTramField = ['title', 'year', 'code'];
+
+  const andCondition = [];
+  if (searchTram) {
+    andCondition.push({
+      $or: searchTramField.map(field => ({
+        [field]: {
+          $regex: searchTram,
+          $options: 'i',
+        },
+      })),
+    });
+  }
+
+  // const andCondition = [
+  //   {
+  //     $or: [
+  //       {
+  //         title: {
+  //           $regex: searchTram,
+  //           $options: 'i',
+  //         },
+  //       },
+  //       {
+  //         code: {
+  //           $regex: searchTram,
+  //           $options: 'i',
+  //         },
+  //       },
+  //       {
+  //         year: {
+  //           $regex: searchTram,
+  //           $options: 'i',
+  //         },
+  //       },
+  //     ],
+  //   },
+  // ];
+
   const { page, limit, skip, sortBy, sortOrder } =
     paginationHelpers.calculatePagination(paginationOption);
   const sortCondition: { [key: string]: SortOrder } = {};
@@ -28,7 +73,7 @@ const getAllSemesters = async (
     sortCondition[sortBy] = sortOrder;
   }
 
-  const result = await AcademicSemester.find()
+  const result = await AcademicSemester.find({ $and: andCondition })
     .sort(sortCondition)
     .skip(skip)
     .limit(limit);
