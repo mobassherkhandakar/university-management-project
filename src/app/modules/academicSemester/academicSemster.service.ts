@@ -1,6 +1,9 @@
 import httpStatus from 'http-status';
 import ApiError from '../../../errors/ApiError';
-import { academicSemesterTitleCodeMapper } from './academicSemester.constens';
+import {
+  AcademicSemesterSearchableFiled,
+  academicSemesterTitleCodeMapper,
+} from './academicSemester.constens';
 import { IAcademicSemester } from './academicSemester.interface';
 import { AcademicSemester } from './academicSemester.modal';
 import { IPaginationOption } from '../../../interfaces/pagination';
@@ -25,18 +28,23 @@ const getAllSemesters = async (
   filters: IAcademicSemesterFilter,
   paginationOption: IPaginationOption,
 ): Promise<IGenericResponse<IAcademicSemester[]>> => {
-  const { searchTram } = filters;
-
-  const searchTramField = ['title', 'year', 'code'];
+  const { searchTram, ...filterData } = filters;
 
   const andCondition = [];
   if (searchTram) {
     andCondition.push({
-      $or: searchTramField.map(field => ({
+      $or: AcademicSemesterSearchableFiled.map(field => ({
         [field]: {
           $regex: searchTram,
           $options: 'i',
         },
+      })),
+    });
+  }
+  if (Object.keys(filterData).length) {
+    andCondition.push({
+      $and: Object.entries(filterData).map(([filed, value]) => ({
+        [filed]: value,
       })),
     });
   }
