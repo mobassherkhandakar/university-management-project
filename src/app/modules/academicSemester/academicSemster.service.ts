@@ -1,18 +1,18 @@
 import httpStatus from 'http-status';
+import { SortOrder } from 'mongoose';
 import ApiError from '../../../errors/ApiError';
+import { paginationHelpers } from '../../../helpers/paginationHelpers';
+import {
+  IAcademicSemesterFilter,
+  IGenericResponse,
+} from '../../../interfaces/common';
+import { IPaginationOption } from '../../../interfaces/pagination';
 import {
   AcademicSemesterSearchableFiled,
   academicSemesterTitleCodeMapper,
 } from './academicSemester.constens';
 import { IAcademicSemester } from './academicSemester.interface';
 import { AcademicSemester } from './academicSemester.modal';
-import { IPaginationOption } from '../../../interfaces/pagination';
-import {
-  IAcademicSemesterFilter,
-  IGenericResponse,
-} from '../../../interfaces/common';
-import { paginationHelpers } from '../../../helpers/paginationHelpers';
-import { SortOrder } from 'mongoose';
 
 const createSemester = async (
   payload: IAcademicSemester,
@@ -99,7 +99,15 @@ const getAllSemesters = async (
   };
 };
 
+const getSingleSemester = async (
+  id: string,
+): Promise<IAcademicSemester | null> => {
+  const result = await AcademicSemester.findById(id);
+  return result;
+};
+
 export const AcademicSemesterService = {
   createSemester,
   getAllSemesters,
+  getSingleSemester,
 };
